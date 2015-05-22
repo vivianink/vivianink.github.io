@@ -193,7 +193,7 @@ body{
 }
 p{
 	font:Verdana, Geneva, sans-serif 18px;
-	color:#C33;
+	color: #F63;
 	font-weight:bold;
 	text-align:center;
 }
@@ -206,10 +206,7 @@ p{
 
 #placeHolder{
 	width:60%;
-	height:250px;
+	height:300px;
 	margin:15px auto;
 	padding:2px;
-	background:#CC3333;
-/*	border-bottom:#CC3333 1px dotted;*/
-	/*border-right:#CC3333 1px dotted;*/
 }

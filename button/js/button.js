@@ -7,11 +7,13 @@ $(function(){
 		var l = pos-dis;
 		$('.tip').css({'left':l+'px'}).animate({'top':75,'opacity':0.9},300);
 	},function(){
-		$('.tip').animate({'top':50,'opacity':0},400);
+		if(!$('.tip').is(':animated')){
+			$('.tip').animate({'top':50,'opacity':0},400);
+		}
 	})
 })
 
-/*function prepareGallery(){
+function prepareGallery(){
 	var links = document.getElementsByTagName("a");
 	for(var i=0;i<links.length;i++){
 		links[i].onclick=function(){
@@ -31,11 +33,15 @@ $(function(){
 }
 
 function showPic(whichPic){
-		var source = "../"+whichPic.getAttribute("href");
-		var placeholder = document.getElementById("placeHolder");
-		placeholder.setAttribute("style","background:url("+source+")");
-		document.body.style.background="url(1.jpg)";
-		placeholder.style.background="url("+source+")";
-			
+		    var holder = document.getElementById("placeHolder");
+			if(holder.firstChild){
+				holder.removeChild(holder.firstChild);
+			}
+			var image = document.createElement("img");
+			image.setAttribute("width","100%");
+			image.setAttribute("height","300px");
+			var source = whichPic.getAttribute("href");
+			image.setAttribute("src",source);
+			holder.appendChild(image);		
 }
-window.onload=prepareGallery;*/
+window.onload=prepareGallery;
