@@ -50,13 +50,13 @@ body{
 	-o-transition：width 0.2s ease-out;
 }
 .link-miss .icon{
-	background: url(../images/png/25.png) no-repeat center center;
+	background: url(../images/25.png) no-repeat center center;
 }
 .link-play .icon{
-	background: url(../images/png/65.png) no-repeat center center;
+	background: url(../images/65.png) no-repeat center center;
 }
 .link-touch .icon{
-	background: url(../images/png/105.png) no-repeat center center;
+	background: url(../images/105.png) no-repeat center center;
 }
 .link .icon:hover{
 	transform:rotate(360deg) scale(1.2);
