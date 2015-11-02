@@ -234,11 +234,11 @@
        $('#pro1').click(function(){
           window.open('http://vivianink.github.io/button/button.html','choose a gift');
        });
-       $('#pro1').click(function(){
-          window.open('url','windowname');
+       $('#pro2').click(function(){
+          window.open('https://github.com/vivianink/vivianink.github.io','windowname');
        });
-       $('#pro1').click(function(){
-          window.open('url','windowname');
+       $('#pro3').click(function(){
+          window.open('https://github.com/vivianink/vivianink.github.io','windowname');
        });   
      }
    
