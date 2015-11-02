@@ -1,0 +1,917 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{padding:0;margin:0;}
+body{font-size:12px;font-family:cursive,'Microsoft YaHei';color:#fff;}
+img{border:none;}
+li{list-style: none}
+a{text-decoration: none;color: #fff}
+
+/*清除浮动*/
+.clearfix:after{content: '';display: block;clear:both;}
+.clearfix{zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+
+html,body{
+	height: 100%;
+    overflow: hidden;
+}
+#pages{
+	position:fixed;
+	right: 15px;
+	top: 50%;
+	list-style: none;
+}
+#pages li{
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	margin: 0 0 10px 5px;
+	border:1px solid #99CC99;
+}
+#pages li.active{
+	background: #003366;
+}
+
+#container,.section{
+	position: relative;
+	height: 100%;
+}
+.section{
+	background: url(imgs/polygon-5.jpg) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+/*section0*/
+#section0{
+	background: url(imgs/fontPageBg.jpg) no-repeat left top;
+	background-size: 100% 100%;
+	background-color: #003333;
+}
+.loading{
+	width: 80px;
+	height: 80px;
+	background: url(imgs/loading.gif) no-repeat;
+	background-size: 80px 80px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-left: -40px;
+	margin-top: -40px;
+}
+.selfInfo{
+	padding-top:140px;
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-box-align:center;
+	color:#fff;
+}
+.headImg{
+	background: url(imgs/headImg.png) no-repeat 50% 50%;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    -webkit-transition:transform 1.5s;
+    display: none
+}
+.moveUp{
+    -webkit-transform:translateY(-15px);
+}
+.selfInfoCont{
+   display: none;
+   text-align: center;
+}
+.name{
+	font-size: 44px;
+	margin-bottom: 10px;
+}
+.info{
+	font-size: 22px;
+	padding:5px 0;
+}
+/*section1*/
+.title{
+	height:60px;
+	line-height: 60px;
+	padding-left: 123px;
+	font-size: 36px;
+	position: absolute;
+	left: 62%;
+	top:53px;
+	background: url(imgs/fishTitle.png) no-repeat top left;
+	background-size: 100px 55px;
+}
+.title span{
+	background: rgba(0,23,55,0.7);
+	border:1px solid #fff;
+	border-radius: 45%;
+	padding:13px 20px;
+	-webkit-transition:background 2s;
+	-webkit-transition:border-radius 2s;
+}
+.eduWrap{
+	width: 808px;
+	height: 410px;
+	position: absolute;
+	left: 22%;
+	top:200px;
+}
+.fishBubble1,.fishBubble2,.fishBubble3{
+	background: rgba(0,23,55,0.8);
+    border:1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+}
+.fishBubble1{
+	width: 35px;
+	height: 35px;
+	top:91px;
+	left:310px;
+}
+.fishBubble2{
+	width: 22px;
+	height: 22px;
+	top:160px;
+	left:356px;
+}
+.fishBubble3{
+	width: 16px;
+	height: 16px;
+	top:215px;
+	left:408px;
+}
+.contBox{
+	position: absolute;
+	background: rgba(0,23,55,0.7);
+    border:1px solid #fff;
+	border-radius: 40%;
+	padding-top: 20px;
+	-webkit-transition:background 2s;
+	-webkit-transition:border-radius 2s;
+}
+
+.title span:hover,.contBox:hover{
+	background: rgba(0,23,55,1.0);
+	border-radius: 30%;
+}
+#contBox1{
+	width: 290px;
+	padding-bottom: 20px;
+}
+#contBox2{
+	width: 320px;
+	right:10px;
+	bottom:20px;
+	padding-bottom: 30px;
+}
+.date{
+	display: block;
+	font-size: 16px;
+	text-align: center;
+}
+.cont{
+	display: table;
+	margin:0 auto;
+	padding: 10px 0 0 20px;
+	position: relative;
+}
+.cont dt{
+    font-size: 18px;
+    padding-bottom: 6px;
+    text-align: center;
+}
+.cont dd{
+	padding-bottom:5px;
+	font-size: 16px;
+	padding:0 36px;
+	padding-bottom: 5px;
+}
+.cont dd:first-of-type{
+	text-align: center;
+}
+.cont dd:last-of-type{
+	padding-bottom: 10px;
+}
+.loveNk{
+	position: absolute;
+	top:48px;
+	left:65px;
+	font-size: 32px;
+	-webkit-transform:rotate(-10deg);
+	font-family: "Reenie Beanie";
+	display: none;
+	color:#fff;
+}
+.loveNk em{
+	display: inline-block;
+	width: 45px;
+	height: 40px;
+    background: url(imgs/heart.png) no-repeat ;
+    background-size: 45px 40px;
+    vertical-align: text-bottom;
+    padding-right: 5px;
+}
+.shanhu{
+	background: url(imgs/shanhu6.png) no-repeat center center;
+	width: 130px;
+	height: 220px;
+	background-size: 130px 220px;
+	position: absolute;
+	bottom: 20px;
+	left:30px;
+}
+.fishleft1{
+	background: url(imgs/fishleft1.png) no-repeat;
+	width: 74px;
+	height: 34px;
+	background-size: 74px 34px;
+	position: absolute;
+	right:-65%;
+	bottom: 40%; 
+}
+.fishleft2{
+	background: url(imgs/fishleft2.png) no-repeat;
+	width: 60px;
+	height: 25px;
+	background-size: 60px 25px;
+	position: absolute;
+	right:-85%;
+	bottom: 25%; 
+}
+.bubbles{
+   position: absolute;
+   height: 200px;
+   width: 100px;
+   top:225px;
+   left:45px;
+}
+.bubble{
+	position: absolute;
+    border-radius: 50%;
+	background: rgba(0,23,55,0.3);
+	border:1px solid rgba(255,255,255,0.7);
+}
+#bubble1{
+	width: 26px;
+	height: 26px;	
+	bottom: 20px;
+	left: 0;
+}
+#bubble2{
+	width: 20px;
+	height: 20px;	
+	bottom: 0;
+	left:30px;
+}
+#bubble3{
+	width: 15px;
+	height: 15px;	
+	bottom: 10px;
+	left:50px;
+}
+#bubble4{
+	width: 11px;
+	height: 11px;	
+	bottom: 5px;
+	left:60px;
+}
+
+/*section2*/
+.fishes li{
+	position: absolute;
+}
+#fish1{
+	background: url(imgs/fish1.png) no-repeat center center;
+	background-size: 54px 46px;
+    width: 54px;
+    height: 46px;
+    left: 241px;
+    bottom: 31px;
+}
+#fish2{
+	background: url(imgs/fish2.png) no-repeat center center;
+    background-size: 80px 66px;
+    width: 80px;
+    height: 66px;
+    left: 30px;
+    bottom: 59px;
+}
+#fish3{
+	background: url(imgs/fish3.png) no-repeat center center;
+    background-size: 80px 66px;
+    width: 80px;
+    height: 66px;
+    left: 310px;
+    bottom: 35px;
+}
+#fish4{
+	background: url(imgs/fish4.png) no-repeat center center;
+    background-size: 100px 90px;
+    width: 100px;
+    height: 90px;
+    left: 322px;
+    bottom: 79px;
+}
+#fish5{
+	background: url(imgs/fish5.png) no-repeat center center;
+    background-size: 66px 42px;
+    width: 66px;
+    height: 42px;
+    left: 120px;
+    bottom: 35px;
+}
+#fish6{
+	background: url(imgs/fish6.png) no-repeat center center;
+    background-size: 80px 66px;
+    width: 80px;
+    height: 66px;
+    left: 198px;
+    bottom: 78px;
+}
+#fish7{
+	background: url(imgs/fish7.png) no-repeat center center;
+    background-size: 88px 76px;
+    width: 88px;
+    height: 76px;
+    left: 430px;
+    bottom: 34px;
+}
+.skillTop{
+	position: absolute;
+	right:15px;
+	top:15px;
+}
+#fishTop{
+	background: url(imgs/fish8.png) no-repeat center center;
+	width: 85px;
+    height: 70px;
+    background-size: 85px 70px;
+    margin-right: 2px
+}
+.skillTlt{
+	display: -webkit-box;
+    -webkit-box-align:center;
+    -webkit-box-pack:center;
+}
+.skillTlt li{
+	color:#fff;
+	border:1px solid #a2aa92;
+	background: rgba(0,23,55,0.5);
+	border-radius: 50% 45%;
+	text-align: center;
+	margin-right: 8px;
+	-webkit-transition:border-radius 2s;
+	-webkit-animation:bubble 2s linear;
+}
+@-webkit-keyframes bubble{
+	0%{
+	    background: rgba(0,23,55,0.5);
+        border-radius: 50% 40%;
+	}
+	50% {
+	    background: rgba(0,23,55,0.7);
+	    border-radius: 35%;
+	}
+	100%{
+	    background: rgba(0,23,55,0.9);
+        border-radius: 30%;
+	}
+}
+.skillTlt li:hover{
+	border-radius: 0;
+	text-shadow: #000 2px 2px 2px;
+	background: rgba(0,23,55,0.7);
+}
+.skillTlt li:nth-child(1){
+	font-size: 40px;
+    width: 77px;
+    height: 64px;
+    line-height: 64px;
+}
+.skillTlt li:nth-child(2){
+	font-size: 33px;
+    width: 65px;
+    height: 56px;
+    line-height: 56px;
+}
+.skillTlt li:nth-child(3){
+	font-size: 29px;
+    width: 59px;
+    height: 50px;
+    line-height: 50px;
+}
+.skillTlt li:nth-child(4){
+	font-size: 26px;
+    width: 49px;
+    height: 44px;
+    line-height: 44px;
+}
+.skillTlt li:nth-child(5){
+    width: 30px;
+    height: 30px;
+}
+.skillTlt li:nth-child(6){
+    width: 20px;
+    height: 20px;
+}
+.circleProgressWrap{
+	position: absolute;
+	top: 150px;
+	left:50%;
+	width: 610px;
+	margin-left: -305px;
+}
+.circleProgress{
+	margin-bottom: 20px;
+}
+.circleProgress.row2{
+	-webkit-box-sizing:border-box;
+	padding:0 120px;
+}
+.circleProgress li{
+    float: left;
+    width: 130px;
+    height: 180px;
+    position: relative;
+    margin-right: 110px;
+}
+.circleProgress li:last-child{
+    margin-right:0px;
+}
+.circleProgress h2{
+	padding-bottom: 15px;
+	text-align: center;
+}
+.circle {
+    width: 130px;
+    height: 130px;  
+    position: absolute;
+    border-radius: 50%;
+    background:rgba(153,0,51,1.0);
+}
+.pie_left, .pie_right {
+    width: 130px; 
+    height: 130px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.left, .right {
+    display: block;
+    width: 130px;
+    height: 130px;
+    background:#FF9999;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pie_right, .right {
+    clip:rect(0,auto,auto,65px);
+}
+.pie_left, .left {
+    clip:rect(0,65px,auto,0);
+}
+.mask {
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    left: 8px;
+    top: 8px;
+    background: #FFF;
+    position: absolute;
+    text-align: center;
+    line-height: 114px;
+    font-size: 16px;
+    color:#001737;
+}
+/*section3*/
+.proFishes1{
+	position: absolute;
+    bottom: 30px;
+    left:40px;
+    width: 440px;
+    height: 150px;
+}
+.proFishes1 li,.proFishes2 li{
+	position: absolute;
+}
+#proFish1{
+	background: url(imgs/proFish1.png) no-repeat left top;
+	width: 92px;
+    height: 47px;
+    background-size: 92px 47px;
+    top: 67px;
+    left: 120px;
+    opacity: 1;
+}
+
+#proFish2{
+	background: url(imgs/proFish2.png) no-repeat left top;
+    width: 56px;
+  	height: 25px;
+  	background-size: 56px 25px;
+  	top: 35px;
+  	left: 330px;
+    opacity: 0.9;
+}
+#proFish3{
+	background: url(imgs/proFish3.png) no-repeat left top;
+	width: 67px;
+  	height: 34px;
+  	background-size: 67px 34px;
+  	top: 92px;
+  	left: 0px;
+    opacity: 0.9;
+}
+#proFish4{
+	background: url(imgs/proFish4.png) no-repeat left top;
+	width: 60px;
+  	height: 31px;
+  	background-size: 60px 31px;
+  	top: 102px;
+  	left: 182px;
+    opacity: 0.9;
+}
+#proFish5{
+	background: url(imgs/proFish5.png) no-repeat left top;
+	width: 65px;
+  	height: 32px;
+  	background-size: 65px 32px;
+  	top: 33px;
+  	left: 82px;
+    opacity: 0.9;
+}
+#proFish6{
+	background: url(imgs/proFish6.png) no-repeat left top;
+	width: 78px;
+  	height: 37px;
+  	background-size: 78px 37px;
+  	top: 25px;
+  	left: 190px;
+    opacity: 0.8;
+}
+#proFish7{
+	background: url(imgs/proFish7.png) no-repeat left top;
+	width: 55px;
+  	height: 26px;
+  	background-size: 52px 26px;
+  	top: 78px;
+  	left: 39px;
+    opacity: 1.0;
+}
+#proFish8{
+	background: url(imgs/proFish3.png) no-repeat left top;
+	width: 70px;
+  	height: 34px;
+  	background-size: 70px 34px;
+  	top: 75px;
+  	left: 250px;
+    opacity: 1.0;
+}
+#proFish9{
+	background: url(imgs/proFish5.png) no-repeat left top;
+	width: 52px;
+  	height: 26px;
+  	background-size: 52px 26px;
+  	top: 116px;
+  	left: 306px;
+    opacity: 0.9;  	
+}
+#proFish10{
+	background: url(imgs/proFish1.png) no-repeat left top;
+	width: 52px;
+  	height: 26px;
+  	background-size: 52px 26px;
+  	top: 120px;
+  	left: 60px;
+    opacity: 0.9;  	
+}
+.proFishes2{
+	position: absolute;
+    top: 120px;
+    right:0px;
+    width: 340px;
+    height: 150px;	
+}
+
+#proFish11{
+	background: url(imgs/proFish8.png) no-repeat left top;
+	width: 70px;
+    height: 34px;
+    background-size: 70px 34px;
+    top: 73px;
+    right: 116px;
+    opacity: 0.8;
+}
+#proFish12{
+	background: url(imgs/proFish9.png) no-repeat left top;
+	width: 52px;
+    height: 26px;
+    background-size: 52px 26px;
+    top: 111px;
+    right: 185px;
+    opacity: 0.9;
+}
+#proFish13{
+	background: url(imgs/proFish10.png) no-repeat left top;
+	width: 46px;
+    height: 23px;
+    background-size: 46px 23px;
+    top: 33px;
+    right: 165px;
+    opacity: 0.8;	
+}
+#proFish14{
+	background: url(imgs/proFish11.png) no-repeat left top;
+	width: 52px;
+    height: 26px;
+    background-size: 52px 26px;
+    top: 51px;
+    right: 46px;
+    opacity: 0.9;	
+}
+#proFish15{
+	background: url(imgs/proFish12.png) no-repeat left top;
+	width: 45px;
+    height: 23px;
+    background-size: 45px 23px;
+    top: 99px;
+    right: 60px;
+    opacity: 0.9;
+}
+#proFish16{
+	background: url(imgs/proFish13.png) no-repeat left top;
+	width: 45px;
+    height: 42px;
+    background-size: 45px 37px;
+    top: 28px;
+    right: 0;
+    opacity: 0.8;	
+}
+#proFish17{
+	background: url(imgs/proFish14.png) no-repeat left top;
+	width: 28px;
+    height: 30px;
+    background-size: 28px 30px;
+    top: 104px;
+    right: 0;
+    opacity: 0.9;
+}
+.proPageTlt{
+	font-size: 36px;
+	position: absolute;
+	top:76px;
+	left: 50%;
+	margin-left: -114px;
+}
+.proShow{
+    width: 680px;
+    position: absolute;
+    top:180px;
+    left: 50%;
+    margin-left: -340px;
+}
+.proShow ul{
+	display: table;
+	border-collapse:separate;
+	border-spacing: 20px;
+}
+.pro{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	position: relative;
+}
+.proImg{
+	background: #fff;
+	height: 190px;
+	width: 200px;
+	margin:0 auto;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+	position: relative;
+	border:2px solid #99CCCC;
+}
+.proTlt{
+	font-size: 18px;
+	padding-top: 15px;
+}
+.morePro{
+	display: block;
+	padding-top: 15px;
+	text-align: center;
+	font-size: 20px;
+}
+.morePro:hover{
+	color:#FF6666; 
+}
+.jumpFish{
+	background: url(imgs/proFish6.png) no-repeat;
+	width: 70px;
+	height: 34px;
+	background-size: 70px 34px;
+	position: absolute;
+	bottom: 26px;
+	left:50%;
+	margin-left: -35px;
+	opacity: 0.1;
+	display: none;
+}
+.jumpMask{
+	background: rgba(0,23,55,.8);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+	display: none;
+}
+
+.interPageTlt{
+    font-size: 36px;
+	position: absolute;
+	top:60px;
+	left: 50%;
+	margin-left: -72px;
+}
+.interCont{
+    width: 580px;
+    position: absolute;
+    top:125px;
+    left: 50%;
+    margin-left: -290px;
+    font-size: 18px;
+    color:#f8f8e2;
+}
+.job{
+	color: #FF9999
+}
+.interCent{
+	width: 230px;
+	margin:0 auto;
+    line-height: 33px;
+	background: url(imgs/zy-logo.png) no-repeat left center;
+	background-size: 33px 33px;
+	padding-left: 20px;
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+.picLib{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -450px;
+	width: 900px;
+	height: 400px;
+	
+}
+.picLib li{
+	position: absolute;
+	top: 78px;
+	left: 50%;
+	margin-left: -80px;
+	width: 160px;
+	height: 240px;	
+
+}
+.picLib img{
+	width: 100%;
+	height: 100%;
+}
+.centerPic{
+	z-index: 1000;
+	opacity: 0.9
+}
+.fstPic{
+	z-index: 999;
+	opacity: 0.9;
+}
+.secPic{
+	z-index: 100;
+	opacity: 0.8;
+}
+.starFishBox1{
+   position: absolute;
+   top:15px;
+   left:20px;
+   width: 250px;
+   height: 340px;
+}
+.starFishBox1 li,.starFishBox2 li{
+	position: absolute;
+	opacity: 0.9;
+}
+.sf1{
+	background: url(imgs/haixing1.png) no-repeat;
+	width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    top: 10px;
+    left: 166px;
+}
+.sf2{
+	background: url(imgs/haixing2.png) no-repeat;
+	width: 42px;
+    height: 42px;
+    background-size: 42px 42px;
+    top: 70px;
+    left: 109px;
+}
+.sf3{
+	background: url(imgs/haixing3.png) no-repeat;
+	width: 45px;
+    height: 45px;
+    background-size: 45px 45px;
+  	top: 112px;
+  	left: 10px;
+}
+.sf4{
+	background: url(imgs/haixing4.png) no-repeat;
+	width: 40px;
+  	height: 40px;
+  	background-size: 40px 40px;
+  	top: 18px;
+  	left: 10px;
+}
+.sf5{
+	background: url(imgs/haixing1.png) no-repeat;
+	width: 50px;
+  	height: 50px;
+  	background-size: 50px 50px;
+  	top: 184px;
+  	left: 65px;
+}
+.starFishBox2{
+	position: absolute;
+	bottom: 30px;
+	right:40px;
+	width: 150px;
+	height: 150px;
+}
+.sf6{
+	background: url(imgs/haixing5.png) no-repeat;
+	width: 50px;
+  	height: 50px;
+ 	background-size: 50px 50px;
+  	bottom: 14px;
+  	left: 125px;
+}
+.sf7{
+	background: url(imgs/haixing4.png) no-repeat;
+	width: 45px;
+  	height: 45px;
+  	background-size: 45px 45px;
+  	bottom: 0px;
+  	left: 32px;
+}
+.sf8{
+	background: url(imgs/haixing3.png) no-repeat;
+	width: 40px;
+  	height: 40px;
+  	background-size: 40px 40px;
+  	bottom: 64px;
+  	left: 57px;
+}
+
+/*section5*/
+#section5 h2,.contactBox{
+	transition:transform 2s;
+}
+.moveDown{
+	transform:translateY(15px);
+}
+#section5 h2{
+	text-align: center;
+	font-size: 36px;
+	padding-top: 60px;
+}
+.contactBox{
+   width: 350px;
+   position: absolute;
+   top:150px;
+   left:50%;
+   margin-left: -175px;
+   text-align: center;
+   font-size: 18px;
+}
+.contactBox p{
+	padding-top: 10px;
+}
+.linkPink{
+	color:#FFCCCC;
+	font-size: 22px;
+}
+.linkPink a{
+	color:#FF9999;
+	font-size: 18px;
+}
+.linkPink a:hover{
+	color:#FF6666;
+}
+.hire{
+	font-size: 30px;
+}
