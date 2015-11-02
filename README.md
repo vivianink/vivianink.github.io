@@ -1,3 +1,3 @@
 # vivianink.github.io
-I am learning front page recently,I've writen some pages for practice.I'll write some more and I want to share with peple and encourage me to keep going by this way.
-Welcome to visit my page "vivian.github.io" !
+Hi~
+  我对前端很感兴趣，我要在这里开启我的前端之旅啦~~放上一些自己写的小demo也算是一个累积和鼓励自己的过程。希望自己能做一个会设计的萌萌哒程序媛~
